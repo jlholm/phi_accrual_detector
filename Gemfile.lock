@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    phi_accrual_detector (0.1.0)
+    phi_accrual (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -51,10 +51,9 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
-  x86_64-linux
 
 DEPENDENCIES
-  phi_accrual_detector!
+  phi_accrual!
   pry
   rake (~> 13.0)
   rspec (~> 3.0)

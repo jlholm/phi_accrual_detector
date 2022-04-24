@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
-require "phi_accrual_detector"
+$LOAD_PATH.unshift(File.dirname(__FILE__))
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), "..", "lib"))
+
+require "phi_accrual"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

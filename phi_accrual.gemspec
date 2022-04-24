@@ -1,25 +1,25 @@
 # frozen_string_literal: true
 
-require_relative "lib/phi_accrual_detector/version"
+require_relative "lib/phi_accrual/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "phi_accrual_detector"
-  spec.version = PhiAccrualDetector::VERSION
+  spec.name = "phi_accrual"
+  spec.version = PhiAccrual::VERSION
 
   spec.authors = ["jlholm"]
   spec.email = ["jlholmz@gmail.com"]
 
   spec.summary = "Ruby implementation of Akka's Phi Accrual Failure Detector"
   spec.description = ""
-  spec.homepage = "https://github.com/jlholm/phi_accural_detector"
+  spec.homepage = "https://github.com/jlholm/phi_accrual_detector"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
 
   spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/jlholm/phi_accural_detector"
-  spec.metadata["changelog_uri"] = "https://github.com/jlholm/phi_accural_detector/blob/master/CHANGELOG.md"
+  spec.metadata["source_code_uri"] = "https://github.com/jlholm/phi_accrual_detector"
+  spec.metadata["changelog_uri"] = "https://github.com/jlholm/phi_accrual_detector/blob/master/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
