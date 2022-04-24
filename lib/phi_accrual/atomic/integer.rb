@@ -2,7 +2,7 @@
 
 module PhiAccrual
   module Atomic
-    class Fixnum
+    class Integer
       def initialize(value: 0)
         @mutex = Mutex.new
         synchronize { @value = value }
@@ -17,7 +17,7 @@ module PhiAccrual
       end
 
       def add(x)
-        synchronize { @value = @value + x }
+        synchronize { @value += x }
       end
 
       def increment(delta = 1)
