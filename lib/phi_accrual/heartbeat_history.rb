@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "phi_accrual/atomic/fixnum"
+require "phi_accrual/atomic/integer"
 
 module PhiAccrual
   class HeartbeatHistory
@@ -11,8 +11,8 @@ module PhiAccrual
 
       @max_sample_size = max_sample_size
       @intervals = Queue.new
-      @interval_sum = Atomic::Fixnum.new(value: 0)
-      @squared_interval_sum = Atomic::Fixnum.new(value: 0)
+      @interval_sum = Atomic::Integer.new(value: 0)
+      @squared_interval_sum = Atomic::Integer.new(value: 0)
     end
 
     def add(interval)
